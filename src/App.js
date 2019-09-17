@@ -7,6 +7,8 @@ import reducers from './reducers'
 import Counter from './Counter'
 import CounterList from './CounterList'
 import Total from './Total'
+import Average from './Average'
+import ResetAll from './ResetAll'
 
 const store = createStore(reducers)
 
@@ -15,6 +17,8 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Total />
+        <Average />
+        <ResetAll />
         <CounterList />
       </div>
     </Provider>
