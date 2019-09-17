@@ -9,10 +9,10 @@ const CounterList = (props) => {
     <div>
       {props.counters.map((count, i) => {
         return (
-          <Counter 
-            count={count} 
-            increment={() => props.increment(i, 4)}
-            decrement={() => props.decrement(i, 4)}
+          <Counter
+            count={count}
+            increment={() => props.increment(i, 1)}
+            decrement={() => props.decrement(i, 1)}
             reset={() => props.reset(i, 0)}
           />)
       })}
